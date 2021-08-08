@@ -8,7 +8,6 @@ public class StatisticsService {
    * @return - index of first max value
    */
   public long findMax(long[] incomes) {
-    long currentMaxIndex = 0;
     long currentMax = incomes[0];
     for (long income : incomes){
       if  (currentMax < income)
