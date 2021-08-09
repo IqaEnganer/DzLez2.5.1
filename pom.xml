@@ -36,9 +36,15 @@
                         <version>4.3.0</version>
                     </dependency>
                 </dependencies>
-                    <goals>
-                        <goal>check</goal>
-                    </goals>
+                   <executions>
+                    <execution>
+                        <id>SpotBugs-check</id>
+                        <phase>verify</phase>
+                        <goals>
+                            <goal>check</goal>
+                        </goals>
+                   </execution>
+                </executions>
             </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
